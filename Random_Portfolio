@@ -1,0 +1,18 @@
+import random
+
+# لیست سهام موجود
+stocks = ["خودرو", "فولاد", "وبملت", "شستا", "فملی", "وتجارت"]
+
+# ساخت پرتفوی تصادفی
+portfolio_size = 3
+random_portfolio = random.sample(stocks, portfolio_size)
+print(f"پرتفوی تصادفی: {random_portfolio}")
+
+# شبیه‌سازی بازده
+initial_investment = 10_000_000  # ۱۰ میلیون تومان
+returns = [random.uniform(-0.1, 0.2) for _ in range(portfolio_size)]  # بازده بین ۱۰- تا ۲۰+%
+
+# محاسبه ارزش نهایی
+final_values = [initial_investment * (1 + r) for r in returns]
+print(f"ارزش هر سهم: {[round(v, 2) for v in final_values]}")
+print(f"کل ارزش پرتفوی: {round(sum(fina
