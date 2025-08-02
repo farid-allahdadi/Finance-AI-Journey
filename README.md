@@ -4,11 +4,11 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![License](https://img.shields.io/badge/License-MIT-green)
 
-## 🚀 پروژه‌ها
-| فایل | توضیحات |
+## 🚀 Projects
+| file | Explanation |
 |-------|---------|
-| [financial_report.py](/financial_report.py) | تولید گزارش مالی خودکار |
-| [compound_interest.py](/compound_interest.py) | ماشین‌حساب سود مرکب |
+| [financial_report.py](/financial_report.py) | making automatic financial report |
+| [compound_interest.py](/compound_interest.py) |  Compound interest calculator  |
 
 ## 🛠️ نحوه اجرا
 ```bash
