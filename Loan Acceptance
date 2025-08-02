@@ -9,7 +9,7 @@ def check_loan_eligibility():
     if age >= 18:
         if income >= MIN_INCOME:
             if credit_score > 70:
-                loan_amount = income * 12 * 0.5  # حداکثر 50% درآمد سالانه
+                loan_amount = income * 12 * 0.5  
                 print(f"✅ your loan: {loan_amount:,.0f}$ with {LOAN_RATE*100}% interest rate")
             else:
                 print("🔴 credit score not enough!")
