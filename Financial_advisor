@@ -1,0 +1,13 @@
+# receiving inputs
+price = float(input("stock price $: "))
+pe_ratio = float(input("Ratio of P/E: "))
+dividend = float(input("Dividend  (%): "))
+volume = int(input("Volume: "))
+
+# Logical Operators
+if (pe_ratio < 12) and (dividend > 5) and (volume > 1_000_000):
+    print("🚀 Buy signal!")
+elif (pe_ratio > 20) or (dividend < 2) or (volume < 500_000):
+    print("🔥 Sell signal!")
+else:
+    print("🟡more analayse needed.")
