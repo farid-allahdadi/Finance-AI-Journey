@@ -1,0 +1,21 @@
+MIN_INCOME = 5_000  # minimum income for loan
+LOAN_RATE = 0.10  #loan rate
+
+def check_loan_eligibility():
+    age = int(input("your age : "))
+    income = int(input("income: "))
+    credit_score = int(input("credit score  (0-100): "))
+
+    if age >= 18:
+        if income >= MIN_INCOME:
+            if credit_score > 70:
+                loan_amount = income * 12 * 0.5  # حداکثر 50% درآمد سالانه
+                print(f"✅ your loan: {loan_amount:,.0f}$ with {LOAN_RATE*100}% interest rate")
+            else:
+                print("🔴 credit score not enough!")
+        else:
+            print(f"🔴 your income is less than  {MIN_INCOME:,} !")
+    else:
+        print("🔴 your age is less than 18!")
+
+check_loan_eligibility()
