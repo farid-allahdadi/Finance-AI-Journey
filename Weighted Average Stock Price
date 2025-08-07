@@ -1,0 +1,17 @@
+portfolio = {
+    "خودرو": {"shares": 100, "price": 1500},
+    "فولاد": {"shares": 50, "price": 3200},
+    "وبملت": {"shares": 80, "price": 2500}
+}
+
+total_value = 0
+total_shares = 0
+
+for stock, data in portfolio.items():
+    value = data["shares"] * data["price"]
+    total_value += value
+    total_shares += data["shares"]
+    print(f"{stock}: {data['shares']} سهم - ارزش {value:,} تومان")
+
+avg_price = total_value / total_shares
+print(f"\n💰 میانگین موزون قیمت: {avg_price:,.0f} تومان")
